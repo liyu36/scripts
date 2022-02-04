@@ -70,7 +70,7 @@ function restore(){
 	fi
 }
 
-TEMP=`getopt -o brnha:c:k:f:e:m:d: --long backup,restore,now,help,cacert:,cert:,key:,dbfile:,endpoints:manifest:datadir: -- "$@"`
+TEMP=`getopt -o brnha:c:k:f:e:m:d: --long backup,restore,now,help,cacert:,cert:,key:,dbfile:,endpoints:,manifest:,datadir: -- "$@"`
 eval set -- "${TEMP}"
 while true;do
 	case "$1" in 
